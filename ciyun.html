@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+    <meta charset="utf-8">
+
+
+
+    <title>ECharts</title>
+
+
+
+    <!-- 引入 echarts.js -->
+
+
+
+    <script src="js/echarts.min.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+
+
+    <div id="main" style="width: 600px;height:400px;"></div>
+
+
+
+    <script type="text/javascript">
+
+
+
+        // 基于准备好的dom，初始化echarts实例
+
+
+
+        var myChart = echarts.init(document.getElementById('main'));
+
+
+
+
+
+
+
+        // 指定图表的配置项和数据
+
+
+
+       // 调试页面回打印出点击的节点名称
+
+option = {
+
+    tooltip: {
+        show: true
+    },
+    series: [{
+        type: "wordCloud",
+        gridSize: 6,
+        shape: 'diamond',
+        sizeRange: [12, 50],
+        width: 800,
+        height: 500,
+        textStyle: {
+            normal: {
+                color: function() {
+                    return 'rgb(' + [
+                        Math.round(Math.random() * 160),
+                        Math.round(Math.random() * 160),
+                        Math.round(Math.random() * 160)
+                    ].join(',') + ')';
+                }
+            },
+            emphasis: {
+                shadowBlur: 10,
+                shadowColor: '#333'
+            }
+        },
+        data: [{
+                name: " 病毒,",
+                value: 16
+            },
+            {
+                name: " 湖北,",
+                value: 28
+            },
+            {
+                name: " 运气,",
+                value: 0
+            },
+            {
+                name: " 医务工作者,",
+                value: 2
+            },
+            {
+                name: " 封城,",
+                value: 0
+            },
+            {
+                name: " 河南,",
+                value: 4
+            },
+            {
+                name: " 社会,",
+                value: 2
+            },
+            {
+                name: " 治愈,",
+                value: 2
+            },
+            {
+                name: " 死亡,",
+                value: 2
+            },
+            {
+                name: " 管理,",
+                value: 0
+            },
+            {
+                name: " 中央,",
+                value: 0
+            },
+            {
+                name: " 专利,",
+                value: 2
+            },
+            {
+                name: " 浙江,",
+                value: 6
+            },
+            {
+                name: " 疑似,",
+                value: 2
+            },
+            {
+                name: " 求助,",
+                value: 18
+            },
+            {
+                name: " 捐款,",
+                value: 0
+            },
+            {
+                name: " 上海,",
+                value: 12
+            },
+            {
+                name: " 控制,",
+                value: 0
+            },
+            {
+                name: " 广州,",
+                value: 6
+            },
+            {
+                name: " 咳嗽,",
+                value: 0
+            },
+            {
+                name: " 发烧,",
+                value: 0
+            },
+            {
+                name: " 人民日报,",
+                value: 4
+            },
+            {
+                name: " 微博,",
+                value: 39
+            },
+            {
+                name: " 军队,",
+                value: 0
+            },
+            {
+                name: " 患者,",
+                value: 8
+            },
+            {
+                name: " 肺炎,",
+                value: 13
+            },
+            {
+                name: " 治疗,",
+                value: 4
+            },
+            {
+                name: " 医生,",
+                value: 14
+            },
+            {
+                name: " 护士,",
+                value: 0
+            },
+            {
+                name: " 隔离,",
+                value: 14
+            },
+            {
+                name: " 拐点,",
+                value: 0
+            },
+            {
+                name: " 公布,",
+                value: 9
+            },
+            {
+                name: " 火神山,",
+                value: 4
+            },
+            {
+                name: " 雷神山,",
+                value: 0
+            },
+            {
+                name: " 协和,",
+                value: 2
+            },
+            {
+                name: " 热干面,",
+                value: 0
+            },
+            {
+                name: " 丁香园,",
+                value: 0
+            },
+            {
+                name: " 信息,",
+                value: 13
+            },
+            {
+                name: " 双黄连,",
+                value: 0
+            },
+            {
+                name: " 冠状病毒,",
+                value: 4
+            },
+            {
+                name: " 加油,",
+                value: 8
+            },
+            {
+                name: " 四川,",
+                value: 2
+            },
+            {
+                name: " 医院,",
+                value: 27
+            },
+            {
+                name: " 大理,",
+                value: 58
+            },
+            {
+                name: " 武汉,",
+                value: 49
+            },
+            {
+                name: " 口罩,",
+                value: 135
+            },
+            {
+                name: " 辟谣,",
+                value: 5
+            },
+            {
+                name: " 救,",
+                value: 13
+            },
+            {
+                name: " 药,",
+                value: 9
+            },
+            {
+                name: " 医疗,",
+                value: 9
+            },
+            {
+                name: " 病人,",
+                value: 4
+            },
+            {
+                name: " 中国,",
+                value: 9
+            },
+            {
+                name: " 红十字,",
+                value: 0
+            },
+            {
+                name: " 疫情,",
+                value: 25
+            },
+            {
+                name: " 确诊,",
+                value: 20
+            }
+        ],
+    }]
+
+};
+
+
+
+        //
+
+ myChart.setOption(option);
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
