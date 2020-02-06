@@ -33,10 +33,10 @@
         // 指定图表的配置项和数据
 
        // 调试页面回打印出点击的节点名称
-    option = {
+option = {
     title : {
-        text: '南丁格尔玫瑰图',
-        subtext: '纯属虚构',
+        text: '武汉红十字会物资发放情况',
+        subtext: '2020年1月31日',
         x:'center'
     },
     tooltip : {
@@ -63,44 +63,12 @@
     },
     calculable : true,
     series : [
-        {
-            name:'半径模式',
-            type:'pie',
-            radius : [20, 110],
-            center : ['25%', '50%'],
-            roseType : 'radius',
-            label: {
-                normal: {
-                    show: false
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            lableLine: {
-                normal: {
-                    show: false
-                },
-                emphasis: {
-                    show: true
-                }
-            },
-            data:[
-                {value:10, name:'rose1'},
-                {value:5, name:'rose2'},
-                {value:15, name:'rose3'},
-                {value:25, name:'rose4'},
-                {value:20, name:'rose5'},
-                {value:35, name:'rose6'},
-                {value:30, name:'rose7'},
-                {value:40, name:'rose8'}
-            ]
-        },
+        
         {
             name:'面积模式',
             type:'pie',
-            radius : [30, 110],
-            center : ['75%', '50%'],
+            radius : [30, 190],
+            center : ['50%', '50%'],
             roseType : 'area',
             data:[
                 {value:10, name:'rose1'},
@@ -116,6 +84,7 @@
     ]
 };
 
+        //
  myChart.setOption(option);
 
     </script>
