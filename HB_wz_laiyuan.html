@@ -34,131 +34,29 @@
 
        // 调试页面回打印出点击的节点名称
 var allData = {
-    "citys": [{
-            "name": "河北以岭药业有限公司",
-            "value": [109.838129, 40.183354, 500.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#F55881"
-                }
-            }
-        },
-
-        {
-            "name": "上海宇昂科技王宇董事长",
-            "value": [121.432278, 31.167684, 4.900000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#58F581"
-                }
-            }
-        },
-
-        {
-            "name": "杭州占戈贸易有限公司",
-            "value": [120.218587, 30.260936, 7.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#F58158"
-                }
-            }
-        },
-
-        {
-            "name": "江苏新农科技有限公司",
-            "value": [121.063256, 32.536145, 76.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#F58158"
-                }
-            }
-        },
-
-        {
-            "name": "湖北稳健集团",
-            "value": [114.913858, 30.463724, 2.460000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#F58158"
-                }
-            }
-        },
-
-        {
-            "name": "湖北稳健集团",
-            "value": [114.913858, 30.463724, 1.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#58F581"
-                }
-            }
-        },
-
-        {
-            "name": "中国科学院王中林院士",
-            "value": [118.769008, 32.054745, 20.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#F58158"
-                }
-            }
-        },
-
-        {
-            "name": "安徽惟北大鱼环保科技有限公司",
-            "value": [117.152594, 31.860424, 5.000000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#58F581"
-                }
-            }
-        },
-
-        {
+    "citys1": [{
             "name": "黑龙江红十字会",
             "value": [126.630807, 45.724933, 110.000000],
-            "symbolSize": 3,
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#F55881"
                 }
             }
-        },
-
-        {
-            "name": "河南省红十字会",
-            "value": [113.686320, 34.777110, 14.930000],
-            "symbolSize": 3,
+        },{
+            "name": "河北以岭药业有限公司",
+            "value": [109.838129, 40.183354, 500.000000],
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
-                    "color": "#81F558"
+                    "color": "#F55881"
                 }
             }
-        },
-
-        {
-            "name": "河南省红十字会",
-            "value": [113.686320, 34.777110, 14.927000],
-            "symbolSize": 3,
-            "itemStyle": {
-                "normal": {
-                    "color": "#8158F5"
-                }
-            }
-        },
-
-        {
+        }],
+    "citys2": [ {
             "name": "江西华强医疗器械有限公司",
             "value": [116.171115, 28.220810, 4.500000],
-            "symbolSize": 3,
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#81F558"
@@ -169,7 +67,7 @@ var allData = {
         {
             "name": "陕西韩女士",
             "value": [108.939037, 34.343423, 1.200000],
-            "symbolSize": 3,
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#81F558"
@@ -178,9 +76,19 @@ var allData = {
         },
 
         {
-            "name": "天津市红十字会",
-            "value": [117.186333, 39.125004, 20.110000],
-            "symbolSize": 3,
+            "name": "河南省红十字会",
+            "value": [113.686320, 34.777110, 14.930000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#81F558"
+                }
+            }
+        }],
+    "citys3": [{
+            "name": "河南省红十字会",
+            "value": [113.686320, 34.777110, 14.927000],
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#8158F5"
@@ -188,21 +96,25 @@ var allData = {
             }
         },
 
+       
+
         {
-            "name": "北京森根比亚生物工程技术有限公司",
-            "value": [116.674608, 40.360543, 36.000000],
-            "symbolSize": 3,
+            "name": "天津市红十字会",
+            "value": [117.186333, 39.125004, 20.110000],
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
-                    "color": "#F58158"
+                    "color": "#8158F5"
                 }
             }
         },
 
+        
+
         {
             "name": "涿州华诺救生装备有限公司",
             "value": [115.952941, 39.482574, 2.300000],
-            "symbolSize": 3,
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#8158F5"
@@ -213,10 +125,120 @@ var allData = {
         {
             "name": "苏州宝集沣生物科技有限公司",
             "value": [120.585868, 31.281277, 56.700000],
-            "symbolSize": 3,
+            "symbolSize": 7,
             "itemStyle": {
                 "normal": {
                     "color": "#8158F5"
+                }
+            }
+        }],
+    "citys4": [{
+            "name": "湖北稳健集团",
+            "value": [114.913858, 30.463724, 1.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#58F581"
+                }
+            }
+        },{
+            "name": "安徽惟北大鱼环保科技有限公司",
+            "value": [117.152594, 31.860424, 5.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#58F581"
+                }
+            }
+        },{
+            "name": "上海宇昂科技王宇董事长",
+            "value": [121.432278, 31.167684, 4.900000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#58F581"
+                }
+            }
+        }],
+    "citys4": [{
+            "name": "北京森根比亚生物工程技术有限公司",
+            "value": [116.674608, 40.360543, 36.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#F58158"
+                }
+            }
+        },{
+            "name": "中国科学院王中林院士",
+            "value": [118.769008, 32.054745, 20.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#F58158"
+                }
+            }
+        },{
+            "name": "杭州占戈贸易有限公司",
+            "value": [120.218587, 30.260936, 7.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#F58158"
+                }
+            }
+        },
+
+        {
+            "name": "江苏新农科技有限公司",
+            "value": [121.063256, 32.536145, 76.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#F58158"
+                }
+            }
+        },
+
+        {
+            "name": "湖北稳健集团",
+            "value": [114.913858, 30.463724, 2.460000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#F58158"
+                }
+            }
+        }],
+    "citys5": [{
+            "name": "杭州占戈贸易有限公司",
+            "value": [120.218587, 30.260936, 7.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#31F5F8"
+                }
+            }
+        },
+
+        {
+            "name": "江苏新农科技有限公司",
+            "value": [121.063256, 32.536145, 76.000000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#31F5F8"
+                }
+            }
+        },
+
+        {
+            "name": "湖北稳健集团",
+            "value": [114.913858, 30.463724, 2.460000],
+            "symbolSize": 7,
+            "itemStyle": {
+                "normal": {
+                    "color": "#31F5F8"
                 }
             }
         }],
@@ -375,22 +397,22 @@ var allData = {
 };
 
 option = {
-    backgroundColor: '#404a59',
+    backgroundColor: '#ffffff',
     title: {
-        text: '湖北省红十字会捐赠来源',
+        text: '湖北红十字会物资发放情况',
         left: 'center',
         textStyle: {
-            color: '#fff'
+            color: '#404a59'
         }
     },
     legend: {
-        show: false,
+        show: true,
         orient: 'vertical',
-        top: 'bottom',
-        left: 'right',
-        data: ['地点', '线路'],
+        top: 'top',
+        left: 'left',
+        data: ['N95型口罩','普通口罩','药品', '医用物资','民用物资', '线路'],
         textStyle: {
-            color: '#fff'
+            color: '#404a59'
         }
     },
     geo: {
@@ -403,16 +425,16 @@ option = {
         roam: true,
         itemStyle: {
             normal: {
-                areaColor: '#323c48',
+                areaColor: '#d2c1c1',
                 borderColor: '#404a59'
             },
             emphasis: {
-                areaColor: '#2a333d'
+                areaColor: '#c23531'
             }
         }
     },
     series: [{
-        name: '地点',
+        name: 'N95型口罩',
         type: 'effectScatter',
         coordinateSystem: 'geo',
         zlevel: 2,
@@ -430,21 +452,113 @@ option = {
         showEffectOn: 'render',
         itemStyle: {
             normal: {
-                color: '#46bee9'
+                color: '#F58158'
             }
         },
-        data: allData.citys
+        data: allData.citys4
+    }, {
+        name: '普通口罩',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        label: {
+            emphasis: {
+                show: true,
+                position: 'right',
+                formatter: '{b}'
+            }
+        },
+        symbolSize: 2,
+        showEffectOn: 'render',
+        itemStyle: {
+            normal: {
+                color: '#58F581'
+            }
+        },
+        data: allData.citys2
+    }, {
+        name: '药品',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        label: {
+            emphasis: {
+                show: true,
+                position: 'right',
+                formatter: '{b}'
+            }
+        },
+        symbolSize: 2,
+        showEffectOn: 'render',
+        itemStyle: {
+            normal: {
+                color: '#F55881'
+            }
+        },
+        data: allData.citys1
+    }, {
+        name: '医用物资',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        label: {
+            emphasis: {
+                show: true,
+                position: 'right',
+                formatter: '{b}'
+            }
+        },
+        symbolSize: 2,
+        showEffectOn: 'render',
+        itemStyle: {
+            normal: {
+                color: '#8158F5'
+            }
+        },
+        data: allData.citys3
+    }, {
+        name: '民用物资',
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        label: {
+            emphasis: {
+                show: true,
+                position: 'right',
+                formatter: '{b}'
+            }
+        },
+        symbolSize: 2,
+        showEffectOn: 'render',
+        itemStyle: {
+            normal: {
+                color: '#31F5F8'
+            }
+        },
+        data: allData.citys5
     }, {
         name: '线路',
         type: 'lines',
         coordinateSystem: 'geo',
-        zlevel: 2,
+        zlevel: 7,
         large: true,
         effect: {
             show: true,
             constantSpeed: 30,
             symbol: 'pin',
-            symbolSize: 3,
+            symbolSize: 7,
             trailLength: 0,
         },
         lineStyle: {
@@ -454,7 +568,7 @@ option = {
                     color: '#58B3CC'
                 }, {
                     offset: 1,
-                    color: '#F58158'
+                    color: '#F55158'
                 }], false),
                 width: 1,
                 opacity: 0.2,
