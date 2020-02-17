@@ -119,13 +119,41 @@
                 <h2 class="title text-center">捐款收支情况</h2>
                 <p class="intro text-center">截止2月4日，武汉市红十字会累计收到捐款9.84亿，共拨款5.52亿。</p>
                 <div class="row item">
-                    <h3 class="title">武汉市红十字会捐赠收入</h3><p>2月10日，武汉市红十字会接收社会捐赠款2,329笔、共1,234.75万元。截至2月10日24时，武汉市红十字会共接收社会捐赠款110,925.15万元。</p><img class="img-responsive" alt="" src="https://github.com/azurini/data_public/blob/master/武汉红十字会--实际捐款数额与公示情况对比.jpg?raw=true"><figcaption class="figure-caption">注：官网公示数据不代表实际数据(有些未公布)</figcaption><figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
+                    <h3 class="title">武汉市红十字会捐赠收入</h3><p>2月10日，武汉市红十字会接收社会捐赠款2,329笔、共1,234.75万元。截至2月10日24时，武汉市红十字会共接收社会捐赠款110,925.15万元。</p><img class="img-responsive" alt="" src="https://github.com/azurini/data_public/blob/master/武汉红十字会--实际捐款数额与公示情况对比.jpg?raw=true"><figcaption class="figure-caption">注：官网公示数据不代表实际数据(有些未公布)</figcaption>
+                    <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
                         
                         
                     </figure><!--//content-->
                     
                 </div><!--//item-->
-
+                 <div class="p-3" style="width: 100hw; padding: 1rem">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>微信二维码及pos机（人数）</th>
+                                <th>微信二维码及pos机（金额）</th>
+                                <th>现金（人数）</th>
+                                <th>云闪付（人数）</th>
+                                <th>现金及云闪付金额（金额）</th>
+                                <th>交通银行（人数）</th>
+                                <th>交通银行（金额）</th>
+                                <th>农业银行（人数）</th>
+                                <th>农业银行（金额）</th>
+                                <th>支付宝（人数）</th>
+                                <th>支付宝（金额）</th>
+                                <th>数据链接</th>
+                            </tr>
+                        </thead>
+                        <tbody id="showExcel"></tbody>
+                    </table>
+                </div>
+                <div class="p-3" style="width:100hw; padding: 1rem">
+                    <h2>武汉红十字会捐款实际与公示对比</h2>
+                    <ul class="list-group" id="showCSV" >
+                    
+                    </ul>
+                </div>
                 <div class="row item">
                     <h3 class="title">武汉市红十字会收到社会捐赠频次</h3><p>2月10日，武汉市红十字会接收社会捐赠款2,329笔、共1,234.75万元。截至2月10日24时，武汉市红十字会共接收社会捐赠款110,925.15万元。</p><img class="img-responsive" alt="" src="https://github.com/azurini/data_public/blob/master/武汉红十字会--收到社会捐款次数变换趋势.jpg?raw=true"><figcaption class="figure-caption">注：官网公示数据不代表实际数据(有些未公布)</figcaption><figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
                         
@@ -138,8 +166,35 @@
                     <h3 class="title">武汉市红十字会捐赠支出</h3><p>截止2月8日24点，武汉市红十字会共接收社会捐赠款107,981.46万元。已公布使用80，092.65万元，其中非定向65，474.04万元，定向14，618.61 万元，已使用74.17 %。</p><img class="img-responsive" alt="" src="https://github.com/azurini/data_public/blob/master/武汉红十字会--收支情况.jpg?raw=true"><p><i class="fa fa-download"></i> <a href="download.html">下载公布数据表格</a></p><!--//content-->
                     
                 </div><!--//item-->
-                
-                
+                <div class="p-3" style="width: 100hw; padding: 1rem">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>微信二维码及pos机（人数）</th>
+                                <th>微信二维码及pos机（金额）</th>
+                                <th>现金（人数）</th>
+                                <th>云闪付（人数）</th>
+                                <th>现金及云闪付金额（金额）</th>
+                                <th>交通银行（人数）</th>
+                                <th>交通银行（金额）</th>
+                                <th>农业银行（人数）</th>
+                                <th>农业银行（金额）</th>
+                                <th>支付宝（人数）</th>
+                                <th>支付宝（金额）</th>
+                                <th>数据链接</th>
+                            </tr>
+                        </thead>
+                        <tbody id="showExcel"></tbody>
+                    </table>
+                </div>
+                <div class="p-3" style="width:100hw; padding: 1rem">
+                    <h2>武汉红十字会捐款实际与公示对比</h2>
+                    <ul class="list-group" id="showCSV" >
+                    
+                    </ul>
+                </div>
+
                 <h2 class="title text-center" style="margin-top: 80px;">物资发放情况</h2><p class="intro text-center">2月10日，武汉市新冠肺炎疫情防控指挥部已拨付物资至湖北省人民医院、湖北省中医院、武汉同济医院、武汉协和医院、武汉雷神山医院、武汉市武昌医院、武汉市第三医院、武汉市肺科医院、武汉市汉口医院、武汉市金银潭医院、武汉市精神卫生中心、武汉市中心医院、武汉大学中南医院、中部战区武汉总医院、武汉市各区疫情防控指挥部等多家单位。</p><div class="row item ">
                     <div class="content col-xs-12 col-md-4">
                         <h3 class="title">发放社会捐赠物资</h3>
@@ -185,52 +240,8 @@
         </section><!--//why-->  
 
 
-
-
-
-        <div>
-
-            
-
-            <div class="justify-content-center" style="width: 100%; padding: 0 8rem">
-
-                <div class="p-3" style="width: 100hw; padding: 1rem">
-                    <h2>武汉红十字会捐款收支明细</h2>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>时间</th>
-                                <th>微信二维码及pos机（人数）</th>
-                                <th>微信二维码及pos机（金额）</th>
-                                <th>现金（人数）</th>
-                                <th>云闪付（人数）</th>
-                                <th>现金及云闪付金额（金额）</th>
-                                <th>交通银行（人数）</th>
-                                <th>交通银行（金额）</th>
-                                <th>农业银行（人数）</th>
-                                <th>农业银行（金额）</th>
-                                <th>支付宝（人数）</th>
-                                <th>支付宝（金额）</th>
-                                <th>数据链接</th>
-                            </tr>
-                        </thead>
-                        <tbody id="showExcel"></tbody>
-                    </table>
-                </div>
-                    
-                <div class="p-3" style="width:100hw; padding: 1rem">
-                    <h2>武汉红十字会捐款实际与公示对比</h2>
-                    <ul class="list-group" id="showCSV" >
-                    
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
         <!-- my script reference -->
-        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
 
 
         <!-- ******BLOG LIST****** --> 
