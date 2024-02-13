@@ -94,8 +94,8 @@ body, html {
 }
 
 .interests img {
-    width: 100px; /* 根据需要调整 */
-    height: 100px; /* 根据需要调整 */
+    width: 100%; /* 根据需要调整 */
+    height: 100%; /* 根据需要调整 */
     object-fit: cover;
 }
 
