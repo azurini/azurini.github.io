@@ -87,15 +87,9 @@ body, html {
     margin-bottom: 20px;
 }
 
-.project img {
-    width: 100px; /* 根据需要调整 */
-    height: 100px; /* 根据需要调整 */
-    object-fit: cover;
-}
-
-.interests img {
-    width: 100%; /* 根据需要调整 */
-    height: 100%; /* 根据需要调整 */
+.interest, .project img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
     object-fit: cover;
 }
 
