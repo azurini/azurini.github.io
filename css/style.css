@@ -93,6 +93,12 @@ body, html {
     object-fit: cover;
 }
 
+.interests img {
+    width: 100px; /* 根据需要调整 */
+    height: 100px; /* 根据需要调整 */
+    object-fit: cover;
+}
+
 .section {
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
