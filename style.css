@@ -1,0 +1,29 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* Azurini主题的渐变背景 */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* 添加半透明背景以增强文本可读性 */
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1, .footer p {
+    margin: 0;
+}
+
+.about, .contact {
+    padding: 50px 0;
+}
