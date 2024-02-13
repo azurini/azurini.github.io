@@ -75,19 +75,23 @@ body, html {
     box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
 
-.interests ul, .projects {
+.interest ul, .projects {
     list-style: none;
     padding: 0;
 }
 
 .project {
-    display: flex;
-    align-items: center;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.interest, .project img {
+.interest img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+} 
+
+.project img {
     width: 100%;
     border-radius: 8px 8px 0 0;
     object-fit: cover;
