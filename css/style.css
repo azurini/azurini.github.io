@@ -5,7 +5,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: url('../image/your-image-url.jpg'); /* 替换为你的高分辨率图片URL */
+    background-image: url('./image/your-image-url.jpg'); /* 替换为你的高分辨率图片URL */
     height: 100vh; /* 视口高度 */
     background-position: center;
     background-repeat: no-repeat;
