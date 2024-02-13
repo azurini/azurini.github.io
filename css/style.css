@@ -1,30 +1,46 @@
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #fff;
-    background: linear-gradient(to right, #2a5298, #1e3c72); /* Azurini主题的渐变背景 */
+    font-family: 'Arial', sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* 添加半透明背景以增强文本可读性 */
+.hero-image {
+    background-image: url('your-image-url.jpg'); /* 替换为你的高分辨率图片URL */
+    height: 100vh; /* 视口高度 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
 }
 
-.header, .footer {
+.hero-text {
     text-align: center;
-    padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 139, 0.5); /* 半透明的azurini背景 */
+    padding: 20px;
 }
 
-.header h1, .footer p {
-    margin: 0;
+.hero-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
-.about, .contact {
-    padding: 50px 0;
+.hero-text p {
+    font-size: 20px;
 }
 
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
